@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="csrf_token" value="{{ csrf_token() }}">
   <title>Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -28,7 +29,8 @@
   <link rel="stylesheet" href="{{url('admin_assets')}}/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{url('admin_assets')}}/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{url('admin_assets')}}/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -38,6 +40,8 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    @stack('css')
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -63,7 +67,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="{{url('admin_assets')}}/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">{{ auth()->user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -71,7 +75,7 @@
                 <img src="{{url('admin_assets')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  {{ auth()->user()->name }} - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -108,7 +112,7 @@
           <img src="{{url('admin_assets')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>{{ auth()->user()->name }}</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -183,9 +187,50 @@
 <script src="{{url('admin_assets')}}/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="{{url('admin_assets')}}/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{url('admin_assets')}}/dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{url('admin_assets')}}/dist/js/demo.js"></script>
+<!-- DataTables -->
+<script src="{{url('admin_assets')}}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{url('admin_assets')}}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('[data-table="datatable"]').DataTable();
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf_token"]').attr('value')
+      }
+    })
+  })
+
+  $('[data-btn="delete"]').click(function(){
+    let URL = $(this).data('url');
+    swal({
+      title: "Apakah Anda yakin?",
+      text: "Data akan dihapus permanen",
+      icon: "warning",
+      buttons: [
+        'Tidak',
+        'Ya'
+      ],
+    }).then(function(isConfirm) {
+      if (isConfirm) {
+          $.ajax({
+              url: 		URL,
+              method: 	"DELETE"
+          }).then(function(response){
+              if(response.status == 200) {
+                  swal({
+                      title: "Sukses",
+                      text: "Data berhasil dihapus",
+                      icon: "success"
+                  }).then(function(){
+                      window.location.reload();
+                  })
+              }
+          });
+      }
+    })
+  });
+</script>
+@include('sweet::alert')
+@stack('js')
 </body>
 </html>
