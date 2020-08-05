@@ -1,11 +1,11 @@
 ## Todo feature
 - Tentang Website
-- Pengurus (TBC)
-- Karya
-- Page
+- Pengurus @Fauzan
+- Karya & Kategori
+- Page @Firman
     - Pendaftaran Baru (Gform)
 - Event Terbaru Instagram
-- Prestasi
+- Prestasi @Firman
 
 ## How to install
 - composer install
