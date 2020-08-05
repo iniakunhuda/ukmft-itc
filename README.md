@@ -1,11 +1,11 @@
 ## Todo feature
 - Tentang Website
-- Pengurus @Fauzan
+- Pengurus @Virgorasion
 - Karya & Kategori
-- Page @Firman
+- Page @muflihunaf
     - Pendaftaran Baru (Gform)
 - Event Terbaru Instagram
-- Prestasi @Firman
+- Prestasi @muflihunaf
 
 ## How to install
 - composer install
