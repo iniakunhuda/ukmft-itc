@@ -10,7 +10,7 @@
     @include('admin.layout._error')
 
     <div class="box">
-            @isset($karya)
+            @isset($page)
                 <form enctype="multipart/form-data" action="{{ route('pages.update', $page->id) }}" method="POST" role="form">
                 <input name="_method" type="hidden" value="PUT">
             @else
@@ -28,7 +28,9 @@
                     <select name="page_id" class="form-control">
                         <option value="">Pilih Kategori</option>
                         @foreach ($halaman as $item)
+                            @if ($item->id != $page->id)
                             <option value="{{ $item->id }}" @isSelected($page->page_id, $item->id)>{{ $item->judul }}</option>
+                            @endif
                         @endforeach
                     </select>
                 </div>

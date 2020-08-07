@@ -28,7 +28,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        $data['page'] = Page::all();
+        $data['halaman'] = Page::all();
         return view($this->tmp.'create',$data);
     }
 
@@ -88,7 +88,19 @@ class PageController extends Controller
      */
     public function update(Request $request, Page $page)
     {
-        //
+        $filename = AppHelper::upload_update($request,'banner','page',$page['banner']);
+        $data = $request->toArray();
+        $data['slug'] = \Str::slug($data['judul']);
+        $data['banner'] = $filename;
+
+        $saved = $page->update($data);
+        if ($saved) {
+            alert()->success('Berhasil memperbarui data', 'Sukses');
+            return redirect(route('pages.edit', $page->id));
+        }else{
+            alert()->error('Gagal memperbarui data', 'Error');
+            return redirect()->back()->withInput();
+        }
     }
 
     /**
@@ -99,6 +111,8 @@ class PageController extends Controller
      */
     public function destroy(Page $page)
     {
-        //
+        \Storage::disk('public')->delete($page->banner);
+        $page->delete();
+        return \response()->json(['status' => 200, 'msg' => 'Berhasil']);
     }
 }
