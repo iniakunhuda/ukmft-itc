@@ -65,33 +65,35 @@
                             <img src="{{ url('/') }}/assets/img/icons/web.svg">
                         </div>
                         <div class="card-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iure?</p>
+                            <p>Masa penerimaan anggota baru</p>
+                            <br>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="feature-card is-bordered has-text-centered is-feature-reveal">
                         <div class="card-title">
-                            <h4>Cloud integration</h4>
+                            <h4>Belajar Bersama <br> Teknologi Terbaru</h4>
                         </div>
                         <div class="card-icon">
                             <img src="{{ url('/') }}/assets/img/icons/rocket.svg">
                         </div>
                         <div class="card-text">
-                            <p>This is some explanatory text that is on two rows</p>
+                            <p>Mulai dari web development, android, game, design, dsb</p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="feature-card is-bordered has-text-centered is-feature-reveal">
                         <div class="card-title">
-                            <h4>Addons & Plugins</h4>
+                            <h4>Belajar Organisasi <br> menjadi Panitia Event</h4>
                         </div>
                         <div class="card-icon">
                             <img src="{{ url('/') }}/assets/img/icons/light-bulb.svg">
                         </div>
                         <div class="card-text">
-                            <p>This is some explanatory text that is on two rows</p>
+                            <p>Banyak event-event yang dapat diikuti dengan menjadi panitia</p>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -103,15 +105,18 @@
 <section class="section is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Awesome Features</h2>
-            <h3 class="subtitle is-5 is-muted">To make you super happy</h3>
+            <h2 class="title is-2">Budaya dalam UKMFT-ITC</h2>
+            <h3 class="subtitle is-5 is-muted">Bagaimana UKMFT-ITC membantu kamu berkembang?</h3>
             <div class="divider is-centered"></div>
         </div>
 
         <div class="columns is-vcentered side-feature mt-60">
             <div class="column is-4 is-offset-2">
-                <h3 class="title is-3 mb-10 is-title-reveal">Connect with people</h2>
-                <p class="subtitle is-5 is-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum audissem Antiochum, Brute, ut solebam, cum M. Quae diligentissime contra Aristonem dicuntur a Chryippo.</p>
+                <h3 class="title is-3 mb-10 is-title-reveal">Kolaborasi & Inovasi</h2>
+                <p class="subtitle is-5 is-muted">
+                    UKM-FT ITC tidak hanya berfokus pada satu program studi saja, namun merupakan kolaborasi antar berbagai program studi di Fakultas Teknik
+                    untuk belajar hal baru di luar jam kuliah serta mengembangkan sebuah produk yang bermanfaat untuk kemudian dipakai oleh masyarakat.
+                </p>
             </div>
             <div class="column is-5">
                 <img src="{{ url('/') }}/assets/img/illustrations/features/feature-1.png" alt="">
@@ -123,14 +128,15 @@
                 <img src="{{ url('/') }}/assets/img/illustrations/features/feature-2.png" alt="">
             </div>
             <div class="column is-4 is-offset-1">
-                <h3 class="title is-3 mb-10 is-title-reveal">Collaborate easily</h2>
-                <p class="subtitle is-5 is-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum audissem Antiochum, Brute, ut solebam, cum M. Quae diligentissime contra Aristonem dicuntur a Chryippo.</p>
+                <h3 class="title is-3 mb-10 is-title-reveal">Tidak Berhenti Belajar</h2>
+                <p class="subtitle is-5 is-muted">Dalam menghadapi Teknologi yang semakin berkembang, UKMFT-ITC berkomitmen untuk selalu memberikan edukasi baik 
+                    itu berupa seminar, diskusi, pelatihan, workshop dengan berbagai disiplin ilmu di bidang Teknologi</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section section-feature-grey is-medium">
+{{-- <section class="section section-feature-grey is-medium">
     <div class="container">
 
         <div class="columns is-vcentered app-side">
@@ -145,124 +151,97 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="section is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Wait, there's more</h2>
-            <h3 class="subtitle is-5 is-muted">To make you super happy</h3>
+            <h2 class="title is-2">Topik yang dipelajari di UKMFT-ITC</h2>
+            <h3 class="subtitle is-5 is-muted">Kamu bisa memilih mempelajari bidang yang kamu sukai</h3>
             <div class="divider is-centered"></div>
         </div>
 
         <div class="content-wrapper">
             <div class="columns is-multiline icon-list">
-                <div class="column is-3">
+                <div class="column is-4">
                     <div class="feature-icon has-text-centered">
                         <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-github" size="large"></ion-icon>
+                            <ion-icon name="logo-buffer" size="large"></ion-icon>
                         </div>
-                        <h4>Github</h4>
-                        <p>Some feature text</p>
+                        <h4>Materi Kuliah</h4>
+                        <p>Pembahasan mengenai salah satu topik materi kuliah</p>
                     </div>
                 </div>
-                <div class="column is-3">
+                <div class="column is-4">
                     <div class="feature-icon has-text-centered">
                         <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-bitbucket" size="large"></ion-icon>
+                            <ion-icon name="logo-laravel" size="large"></ion-icon>
                         </div>
-                        <h4>Bitbucket</h4>
-                        <p>Some feature text</p>
+                        <h4>Web Development</h4>
+                        <p>Belajar dasar pemrograman web dan framework terbaru</p>
                     </div>
                 </div>
-                <div class="column is-3">
+                <div class="column is-4">
                     <div class="feature-icon has-text-centered">
                         <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-slack" size="large"></ion-icon>
+                            <ion-icon name="game-controller-outline" size="large"></ion-icon>
                         </div>
-                        <h4>Slack</h4>
-                        <p>Some feature text</p>
+                        <h4>Game Development</h4>
+                        <p>Belajar membuat game 2D dan 3D</p>
                     </div>
                 </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-npm" size="large"></ion-icon>
-                        </div>
-                        <h4>Npm</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-javascript" size="large"></ion-icon>
-                        </div>
-                        <h4>Javascript</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-nodejs" size="large"></ion-icon>
-                        </div>
-                        <h4>Nodejs</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-angular" size="large"></ion-icon>
-                        </div>
-                        <h4>Angular</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-google" size="large"></ion-icon>
-                        </div>
-                        <h4>Google</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-python" size="large"></ion-icon>
-                        </div>
-                        <h4>Python</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <div class="feature-icon has-text-centered">
-                        <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-polymer" size="large"></ion-icon>
-                        </div>
-                        <h4>Polymer</h4>
-                        <p>Some feature text</p>
-                    </div>
-                </div>
-                <div class="column is-3">
+                <div class="column is-4">
                     <div class="feature-icon has-text-centered">
                         <div class="icon-wrap is-icon-reveal">
                             <ion-icon name="logo-android" size="large"></ion-icon>
                         </div>
                         <h4>Android</h4>
-                        <p>Some feature text</p>
+                        <p>Belajar membuat aplikasi android dengan bahasa Java / Kotlin</p>
                     </div>
                 </div>
-                <div class="column is-3">
+                <div class="column is-4">
                     <div class="feature-icon has-text-centered">
                         <div class="icon-wrap is-icon-reveal">
-                            <ion-icon name="logo-apple" size="large"></ion-icon>
+                            <ion-icon name="brush-outline" size="large"></ion-icon>
                         </div>
-                        <h4>Apple</h4>
-                        <p>Some feature text</p>
+                        <h4>Design</h4>
+                        <p>Belajar design poster, ilustrator, 2D, 3D, dsb</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="feature-icon has-text-centered">
+                        <div class="icon-wrap is-icon-reveal">
+                            <ion-icon name="videocam-outline" size="large"></ion-icon>
+                        </div>
+                        <h4>Videografi</h4>
+                        <p>Belajar mengenai teknik videografi sampai editing video</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="feature-icon has-text-centered">
+                        <div class="icon-wrap is-icon-reveal">
+                            <ion-icon name="key" size="large"></ion-icon>
+                        </div>
+                        <h4>Security</h4>
+                        <p>Belajar tentang keamanan jaringan dan enkripsi data</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="feature-icon has-text-centered">
+                        <div class="icon-wrap is-icon-reveal">
+                            <ion-icon name="git-merge-outline" size="large"></ion-icon>
+                        </div>
+                        <h4>Artificial Intelligence</h4>
+                        <p>Pembahasan mengenai perkembangan dan ilmu dalam kecerdasan buatan</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="feature-icon has-text-centered">
+                        <div class="icon-wrap is-icon-reveal">
+                            <ion-icon name="infinite-outline" size="large"></ion-icon>
+                        </div>
+                        <h4>Data Science</h4>
+                        <p>Pembahasan mengenai analisa data</p>
                     </div>
                 </div>
             </div>
@@ -270,13 +249,13 @@
     </div>
 </section>
 
-<section class="section is-medium  has-background-image" data-background="https://source.unsplash.com/g30P1zcOzXo/1600x900" data-color="#4FC1EA" data-color-opacity=".6">
+<section class="section is-medium  has-background-image" data-background="{{ asset('assets/img/foto/cakra.jpg') }}" data-color="#4FC1EA" data-color-opacity=".6">
     <div class="overlay"></div>
     <div class="container">
 
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2 light-text is-spaced">Our clients love us</h2>
-            <h3 class="subtitle is-5 light-text">Look at what they say about us</h3>
+            <h2 class="title is-2 light-text is-spaced">UKMFT-ITC menurut Beliau</h2>
+            <h3 class="subtitle is-5 light-text">Apa yang dikatakan orang-orang mengenai ITC</h3>
         </div>
 
         <div class="content-wrapper">
@@ -287,8 +266,8 @@
                             Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
                         </blockquote>
                         <div class="author">
-                            <img src="{{ url('/') }}/assets/img/illustrations/faces/1.png" alt=""/>
-                            <h5>Irma Walters</h5><span>Accountant</span>
+                            <img src="{{ url('/') }}/assets/img/foto/rahmat_hidayat.jpg" alt=""/>
+                            <h5>Dr. H. Rachmad Hidayat, M.T.</h5><span>Dekan Fakultas Teknik</span>
                         </div>
                     </figure>
                 </div>
@@ -298,8 +277,8 @@
                             Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
                         </blockquote>
                         <div class="author">
-                            <img src="{{ url('/') }}/assets/img/illustrations/faces/2.png" alt=""/>
-                            <h5>John Bradley</h5><span>Financial Analyst</span>
+                            <img src="{{ url('/') }}/assets/img/foto/ach_khozaimi.jpg" alt="Achmad Khozaimi, S.Kom., M.Kom"/>
+                            <h5>Achmad Khozaimi, S.Kom., M.Kom </h5><span>Pembina ITC</span>
                         </div>
                     </figure>
                 </div>
@@ -310,7 +289,7 @@
                         </blockquote>
                         <div class="author">
                             <img src="{{ url('/') }}/assets/img/illustrations/faces/3.png" alt=""/>
-                            <h5>Gary Blackman</h5><span>HR Manager</span>
+                            <h5>Gary Blackman</h5><span>Alumni, CTO Bukalapak</span>
                         </div>
                     </figure>
                 </div>
@@ -322,81 +301,279 @@
 <section class="section is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Get Started</h2>
-            <h3 class="subtitle is-5 is-muted">Choose one of our plans</h3>
+            <h2 class="title is-2">Karya Anggota</h2>
+            <h3 class="subtitle is-5 is-muted">Hasil karya anggota UKMFT-ITC</h3>
             <div class="divider is-centered"></div>
         </div>
 
-        <div class="pricing-wrap">
-            <div class="feature-card is-pricing has-text-centered">
-                <h3 class="plan-name">Starter</h3>
-                <img src="{{ url('/') }}/assets/img/illustrations/pricing/1.svg" alt=""/>
-                <div class="price">
-                    0
-                </div>
-                <p>Sign up, get some awesome features and get started now</p>
-                <a class="button is-fullwidth is-bold">Get Started</a>
-            </div>
-            <div class="feature-card is-pricing has-text-centered">
-                <h3 class="plan-name">Pro</h3>
-                <img src="{{ url('/') }}/assets/img/illustrations/pricing/2.svg" alt=""/>
-                <div class="price">
-                    15
-                </div>
-                <p>Sign up, get some awesome features and get started now</p>
-                <a class="button is-fullwidth primary-btn raised is-bold">Get Started</a>
-            </div>
-            <div class="feature-card is-pricing has-text-centered">
-                <h3 class="plan-name">Business</h3>
-                <img src="{{ url('/') }}/assets/img/illustrations/pricing/3.svg" alt=""/>
-                <div class="price">
-                    30
-                </div>
-                <p>Sign up, get some awesome features and get started now</p>
-                <a class="button is-fullwidth is-bold">Get Started</a>
+        <br><br>
+
+        <div class="columns is-centered">
+            <div class="field is-grouped">
+                <p class="control">
+                  <button class="button is-link" data-button-mansory="*">
+                    Semua
+                  </button>
+                </p>
+                <p class="control">
+                  <button class="button" data-button-mansory=".website">
+                    Website
+                  </button>
+                </p>
+                <p class="control">
+                  <button class="button" data-button-mansory=".game">
+                    Game
+                  </button>
+                </p>
+                <p class="control">
+                  <button class="button" data-button-mansory=".aplikasi">
+                    Aplikasi
+                  </button>
+                </p>
             </div>
         </div>
+
+        <br><br>
+
+        <div class="grid">
+            <div class="grid-item website">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673_1280.jpg" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Website</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item game">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/21/15/08/computer-1845880_1280.jpg" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Game</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item website">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854__480.png" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Website</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item website">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://cdn.pixabay.com/photo/2016/08/27/12/06/website-1624028_1280.png" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Website</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item game">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://www.kaorinusantara.or.id/wp-content/uploads/2016/11/battle-of-surabaya-1.jpg" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Game</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item game">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://cdn.playtoko.com/img/files/2014/10/14/playtokocom_-bos-1.png" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Game</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item aplikasi">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://img.okezone.com/content/2016/08/30/207/1476687/lima-aplikasi-chat-karya-anak-bangsa-8shDSUzj2H.jpg" alt="" srcset="">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                        </p>
+                        <br>
+                        <div id="meta" class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                              <div class="tags has-addons">
+                                  <a class="tag is-success" href="#colors">Aplikasi</a>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="columns is-centered">
+            <a href="{{ route('index.karya') }}" class="button btn-primary rounded is-medium raised">
+                Selengkapnya
+            </a>
+        </div>
+        
     </div>
 </section>
 
 <section class="section section-light-grey is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2 is-spaced">Drop us a line or two </h2>
-            <h3 class="subtitle is-5 is-muted">We'd love to hear from You</h3>
+            <h2 class="title is-2 is-spaced">Tertarik untuk bergabung bersama UKMFT-ITC?</h2>
+            <h3 class="subtitle is-5 is-muted">Kami membuka pendaftaran anggota baru tahun 2020/2021</h3>
             <div class="divider is-centered"></div>
         </div>
 
         <div class="content-wrapper">
             <div class="columns">
-                <div class="column is-6 is-offset-3">
-                    <form>
-                        <div class="columns is-multiline">
-                            <div class="column is-6">
-                                <input class="input is-medium" type="text" placeholder="First Name *">
-                            </div>
-                            <div class="column is-6">
-                                <input class="input is-medium" type="text" placeholder="Last Name *">
-                            </div>
-                            <div class="column is-6">
-                                <input class="input is-medium" type="text" placeholder="Email *">
-                            </div>
-                            <div class="column is-6">
-                                <input class="input is-medium" type="email" placeholder="Company">
-                            </div>
-                            <div class="column is-12">
-                                <textarea class="textarea" rows="6" placeholder=""></textarea>
-                            </div>
-                            <div class="column is-12">
-                                <div class="form-footer has-text-right mt-10">
-                                    <button class="button cta is-large primary-btn form-button raised is-clear">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                <div class="column has-text-centered">
+                    <button class="button cta is-large primary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
 @endsection
+
+@push('css')
+<style>
+    .grid-item { width: 25%;padding:10px; }
+</style>
+@endpush
+
+@push('js')
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>    
+<script>
+    $(document).ready(function(){
+        let $grid = $('.grid').isotope({
+            // options
+            itemSelector: '.grid-item',
+        });
+
+        $('button[data-button-mansory]').click(function(){
+            let target_class = $(this).data('buttonMansory');
+            $grid.isotope({ filter: target_class });
+            $(this).addClass("is-link");
+
+            $('button[data-button-mansory]').each(function(){
+                if($(this).data('buttonMansory') != target_class) $(this).removeClass('is-link');
+            });
+        })
+    })
+</script>
+@endpush

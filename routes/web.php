@@ -16,12 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/page/tentang', 'IndexController@tentangKami')->name('index.page.tentang');
+Route::get('/karya', 'IndexController@listKarya')->name('index.karya');
+Route::get('/karya/detail', 'IndexController@detailKarya')->name('index.karya.detail');
+Route::get('/pengurus', 'IndexController@listPengurus')->name('index.pengurus');
 
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
-    
     Route::resource('karya', 'KaryaController');
     Route::get('karya/{karya}/photo/index', 'KaryaController@photo_index')->name('karya.photo.index');
     Route::post('karya/{karya}/photo/create', 'KaryaController@photo_create')->name('karya.photo.create');

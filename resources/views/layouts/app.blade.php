@@ -8,7 +8,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <title>@yield('title', 'UKMFT-ITC')</title>
-        <link rel="icon" type="image/png" href="{{ url('/') }}/assets/img/favicon.png" />
+        <link rel="icon" type="image/png" href="{{ url('/') }}/assets/img/favicon.ico" />
 
         <!--Core CSS -->
         <link rel="stylesheet" href="{{ url('/') }}/assets/css/bulma.css">
@@ -26,8 +26,8 @@
             <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="https://cssninja.io">
-                            <img src="{{ url('/') }}/assets/img/logos/fresh-alt.svg" alt="" width="112" height="28">
+                        <a class="navbar-item" href="{{ url('/') }}">
+                            <img src="{{ url('/') }}/assets/img/logo.png" alt="">
                         </a>
             
                         <a class="navbar-item is-hidden-desktop is-hidden-tablet">
@@ -55,18 +55,21 @@
                         </div>
             
                         <div class="navbar-end">
-                            <a href="#" class="navbar-item is-secondary">
-                                Features
+                            <a href="{{ route('index.page.tentang') }}" class="navbar-item is-secondary">
+                                Tentang Kami
+                            </a>
+                            <a href="{{ route('index.karya') }}" class="navbar-item is-secondary">
+                                Karya Anggota
                             </a>
                             <a href="#" class="navbar-item is-secondary">
-                                Pricing
+                                Blog
                             </a>
-                            <a href="{{ route('login') }}" class="navbar-item is-secondary">
-                                Log in
-                            </a>
+                            {{-- <a href="{{ route('index.pengurus') }}" class="navbar-item is-secondary">
+                                Pengurus
+                            </a> --}}
                             <a class="navbar-item">
                                 <span class="button signup-button rounded secondary-btn raised">
-                                    Sign up
+                                    Daftar Sekarang
                                 </span>
                             </a>
                         </div>
@@ -76,8 +79,8 @@
             <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="https://cssninja.io">
-                            <img src="{{ url('/') }}/assets/img/logos/fresh-alt.svg" alt="" width="112" height="28">
+                        <a class="navbar-item" href="{{ url('/') }}">
+                            <img src="{{ url('/') }}/assets/img/logo.png" alt="">
                         </a>
             
                         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
@@ -93,18 +96,21 @@
                         </div>
             
                         <div class="navbar-end">
-                            <a href="#" class="navbar-item is-secondary">
-                                Features
+                            <a href="{{ route('index.page.tentang') }}" class="navbar-item is-secondary">
+                                Tentang Kami
+                            </a>
+                            <a href="{{ route('index.karya') }}" class="navbar-item is-secondary">
+                                Karya Anggota
                             </a>
                             <a href="#" class="navbar-item is-secondary">
-                                Pricing
+                                Blog
                             </a>
-                            <a href="{{ route('login') }}" class="navbar-item is-secondary">
-                                Log in
-                            </a>
+                            {{-- <a href="{{ route('index.pengurus') }}" class="navbar-item is-secondary">
+                                Pengurus
+                            </a> --}}
                             <a class="navbar-item">
                                 <span class="button signup-button rounded secondary-btn raised">
-                                    Sign up
+                                    Daftar Sekarang
                                 </span>
                             </a>
                         </div>
@@ -155,80 +161,31 @@
                 <div class="columns">
                     <div class="column">
                         <div class="footer-logo">
-                            <img src="{{ url('/') }}/assets/img/logos/fresh-white-alt.svg">
+                            <img src="{{ url('/') }}/assets/img/logo.png" alt="">
                         </div>
                     </div>
                     <div class="column">
                         <div class="footer-column">
                             <div class="footer-header">
-                                <h3>Product</h3>
+                                <h3>SEKRETARIAT</h3>
                             </div>
-                            <ul class="link-list">
-                                <li><a href="#">Discover features</a></li>
-                                <li><a href="#">Why choose our Product ?</a></li>
-                                <li><a href="#">Compare features</a></li>
-                                <li><a href="#">Our Roadmap</a></li>
-                                <li><a href="#">Request features</a></li>
-                            </ul>
+                            <p style="color: #98a9c3;">
+                                Home Base : Sekretariat Bersama BEM Fakultas Teknik Universitas Trunojoyo Madura <br>
+                                Jl. Raya Telang PO. BOX. 02 <br>
+                                Kamal – Bangkalan – Madura – Jawa Timur <br>
+                            </p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="footer-column">
                             <div class="footer-header">
-                                <h3>Docs</h3>
-                            </div>
-                            <ul class="link-list">
-                                <li><a href="#">Get Started</a></li>
-                                <li><a href="#">User guides</a></li>
-                                <li><a href="#">Admin guide</a></li>
-                                <li><a href="#">Developers</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column">
-                            <div class="footer-header">
-                                <h3>Blogroll</h3>
-                            </div>
-                            <ul class="link-list">
-                                <li><a href="#">Latest News</a></li>
-                                <li><a href="#">Tech articles</a></li>
-                                <li><a href="#">Video Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column">
-                            <div class="footer-header">
-                                <h3>Follow Us</h3>
-                                <nav class="level is-mobile">
-                                    <div class="level-left">
-                                        <a class="level-item" href="https://github.com/#">
-                                            <span class="icon">
-                                                <ion-icon name="logo-github" size="large"></ion-icon>
-                                            </span>
-                                        </a>
-                                        <a class="level-item" href="https://facebook.com/#">
-                                            <span class="icon">
-                                                <ion-icon name="logo-facebook" size="large"></ion-icon>
-                                            </span>
-                                        </a>
-                                        <a class="level-item" href="https://google.com/#">
-                                            <span class="icon">
-                                                <ion-icon name="logo-googleplus" size="large"></ion-icon>
-                                            </span>
-                                        </a>
-                                        <a class="level-item" href="https://linkedin.com/#">
-                                            <span class="icon">
-                                                <ion-icon name="logo-linkedin" size="large"></ion-icon>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </nav>
-        
-                                <a href="https://bulma.io" target="_blank">
-                                    <img src="{{ url('/') }}/assets/img/logos/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                                </a>
+                                <h3>Kontak Kami</h3>
+                                <ul class="link-list">
+                                    <li><a href="#">Telp</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Email</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -240,8 +197,8 @@
              
         <!-- Concatenated JS -->
         <script src="{{ url('/') }}/assets/js/app.js"></script>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
         <!-- Fresh JS -->
         <script src="{{ url('/') }}/assets/js/functions.js"></script>
         <script src="{{ url('/') }}/assets/js/main.js"></script>
