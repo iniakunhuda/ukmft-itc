@@ -2,7 +2,7 @@
 
 @section('header')
     <h1>
-        Pages
+        Prestasi
     </h1>
 @endsection
 
