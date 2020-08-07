@@ -85,7 +85,18 @@ class PrestasiController extends Controller
      */
     public function update(Request $request, Prestasi $prestasi)
     {
-        //
+        $filename = AppHelper::upload_update($request,'foto','prestasi',$prestasi['foto']);
+        $data = $request->toArray();
+        $data['foto'] = $filename;
+
+        $saved = $prestasi->update($data);
+        if ($saved) {
+            alert()->success('Berhasil memperbarui data', 'Sukses');
+            return redirect(route('prestasi.edit', $prestasi->id));
+        }else{
+            alert()->error('Gagal memperbarui data', 'Error');
+            return redirect()->back()->withInput();
+        }
     }
 
     /**
@@ -96,6 +107,8 @@ class PrestasiController extends Controller
      */
     public function destroy(Prestasi $prestasi)
     {
-        //
+        \Storage::disk('public')->delete($prestasi->foto);
+        $prestasi->delete();
+        return \response()->json(['status' => 200, 'msg' => 'Berhasil']);
     }
 }

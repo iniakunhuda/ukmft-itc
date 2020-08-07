@@ -24,6 +24,7 @@
                         <th>No</th>
                         <th>Nama Lomba</th>
                         <th>Juara</th>
+                        <th>Tahun</th>
                         <th>Foto</th>
                         <th style="width:20%"></th>
                     </tr>
@@ -33,7 +34,8 @@
                     <tr>
                         <td>{{ $key+1 }}</td>
                         <td>{{ $row->lomba }}
-                            <td>{{ $row->juara }} </td>
+                        <td>{{ $row->juara }} </td>
+                        <td>{{ $row->tahun }} </td>
                         <td>
                             <img src="{{ $row->foto_url }}" class="img-responsive" style="width:100px;height:100px;object-fit:cover"  alt="Gambar">
                         </td>
