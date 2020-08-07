@@ -30,7 +30,7 @@
                             <img src="{{ url('/') }}/assets/img/logo.png" alt="">
                         </a>
             
-                        <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+                        {{-- <a class="navbar-item is-hidden-desktop is-hidden-tablet">
                             <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
                                 <svg width="1000px" height="1000px">
                                     <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
@@ -39,7 +39,7 @@
                                 </svg>
                                 <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
                             </div>
-                        </a>
+                        </a> --}}
             
                         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
                             <span aria-hidden="true"></span>

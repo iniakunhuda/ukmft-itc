@@ -448,6 +448,9 @@
 @push('css')
 <style>
     .grid-item { width: 25%;padding:10px; }
+    @media(max-width:767px){
+        .grid-item { width: 50%;padding:10px; }
+    }
 </style>
 @endpush
 
