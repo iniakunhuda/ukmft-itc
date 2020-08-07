@@ -5,7 +5,7 @@
 - Page @muflihunaf (Done)
     - Pendaftaran Baru (Gform)
 - Event Terbaru Instagram
-- Prestasi @muflihunaf
+- Prestasi @muflihunaf (Done)
 
 ## How to install
 - composer install
