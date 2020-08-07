@@ -531,6 +531,18 @@
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="title-wrapper has-text-centered">
+            <h2 class="title is-2">Instagram Feed</h2>
+            <h3 class="subtitle is-5 is-muted">Berita Terbaru dari ITC</h3>
+            <div class="divider is-centered"></div>
+        </div>
+        <br><br>
+    </div>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ae96a6c4346759879b3595f75133ce1c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+</section>
+
 <section class="section section-light-grey is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
