@@ -31,5 +31,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::resource('kategori_karya', 'KaryaKategoriController');
     // Halaman/Pages
     Route::resource('pages', 'PageController');
+    // Prestasi
+    Route::resource('prestasi', 'PrestasiController');
 
 });

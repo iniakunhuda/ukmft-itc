@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\AppHelper;
 use App\Prestasi;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class PrestasiController extends Controller
 {
+    protected $tmp = "admin.prestasi.";
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +17,8 @@ class PrestasiController extends Controller
      */
     public function index()
     {
-        //
+        $data['prestasi'] = Prestasi::all();
+        return view($this->tmp.'index',$data);
     }
 
     /**
@@ -25,7 +28,7 @@ class PrestasiController extends Controller
      */
     public function create()
     {
-        //
+        return view($this->tmp.'create');
     }
 
     /**
@@ -36,7 +39,17 @@ class PrestasiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $filename = AppHelper::upload($request,'foto','prestasi');
+        $data = $request->toArray();
+        $data['foto'] = $filename;
+        $prestasi = Prestasi::create($data);
+        if ($prestasi) {
+            alert()->success('Berhasil menambah data', 'Sukses');
+            return redirect(route('prestasi.index'));
+        }else{
+            alert()->error('Gagal menambah data', 'Error');
+            return redirect()->back()->withInput();
+        }
     }
 
     /**
@@ -58,7 +71,9 @@ class PrestasiController extends Controller
      */
     public function edit(Prestasi $prestasi)
     {
-        //
+        $data['prestasi'] = $prestasi;
+
+        return view($this->tmp.'create',$data);
     }
 
     /**

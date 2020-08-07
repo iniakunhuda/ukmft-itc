@@ -34,7 +34,7 @@
     </a>
 </li>
 <li class="">
-    <a href="#">
+    <a href="{{ route('prestasi.index') }} ">
         <i class="fa fa-folder"></i>
         <span>Prestasi</span>
     </a>
