@@ -28,7 +28,7 @@
     </a>
 </li>
 <li class="">
-    <a href="#">
+    <a href="{{ route('pages.index') }} ">
         <i class="fa fa-folder"></i>
         <span>Halaman</span>
     </a>
