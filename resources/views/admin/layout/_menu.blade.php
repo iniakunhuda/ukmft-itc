@@ -47,7 +47,7 @@
         </span>
     </a>
     <ul class="treeview-menu">
-        <li><a href="invoice.html"><i class="fa fa-circle-o"></i> Akun</a></li>
+        <li><a href="{{ route('admin.change') }} "><i class="fa fa-circle-o"></i> Akun</a></li>
         <li><a href="profile.html"><i class="fa fa-circle-o"></i> Website</a></li>
     </ul>
 </li>
