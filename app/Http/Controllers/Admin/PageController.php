@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Helpers\AppHelper;
 use App\Page;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PageRequest;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -38,7 +39,7 @@ class PageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PageRequest $request)
     {
         $filename = AppHelper::upload($request,'banner','page');
         $data = $request->toArray();
