@@ -34,6 +34,11 @@
     </a>
 </li>
 <li class="">
+    <a href="{{ route('kategori_prestasi.index') }} ">
+        <i class="fa fa-folder"></i>
+        <span>Prestasi Kategori</span>
+    </a>
+<li class="">
     <a href="{{ route('prestasi.index') }} ">
         <i class="fa fa-folder"></i>
         <span>Prestasi</span>
