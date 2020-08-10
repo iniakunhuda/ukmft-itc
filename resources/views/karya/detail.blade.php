@@ -74,7 +74,7 @@
         <div class="content-wrapper">
             <div class="columns">
                 <div class="column has-text-centered">
-                    <button class="button cta is-large primary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</button>
+                    <button class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</button>
                 </div>
             </div>
         </div>

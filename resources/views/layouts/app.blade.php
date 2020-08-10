@@ -23,7 +23,7 @@
         </div>        
         <section class="hero is-default is-bold">
         
-            <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-fresh bg-itc-dark-primary no-shadow" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="{{ url('/') }}">
@@ -54,20 +54,20 @@
                             
                         </div>
             
-                        <div class="navbar-end">
-                            <a href="{{ route('index.page.tentang') }}" class="navbar-item is-secondary">
+                        <div class="navbar-end ">
+                            <a href="{{ route('index.page.tentang') }}" class="has-text-white " style="padding:0 15px">
                                 Tentang Kami
                             </a>
-                            <a href="{{ route('index.karya') }}" class="navbar-item is-secondary">
+                            <a href="{{ route('index.karya') }}" class="has-text-white " style="padding:0 15px">
                                 Karya Anggota
                             </a>
-                            <a href="#" class="navbar-item is-secondary">
+                            <a href="#" class=" has-text-white" style="padding:0 15px">
                                 Blog
                             </a>
-                            {{-- <a href="{{ route('index.pengurus') }}" class="navbar-item is-secondary">
+                            {{-- <a href="{{ route('index.pengurus') }}" class="" style="padding:0 15px">
                                 Pengurus
                             </a> --}}
-                            <a class="navbar-item">
+                            <a class="" style="padding:0 15px">
                                 <span class="button signup-button rounded secondary-btn raised">
                                     Daftar Sekarang
                                 </span>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </nav>
-            <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+            <nav id="navbar-clone" class="navbar is-fresh bg-itc-dark-primary" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="{{ url('/') }}">
@@ -96,19 +96,19 @@
                         </div>
             
                         <div class="navbar-end">
-                            <a href="{{ route('index.page.tentang') }}" class="navbar-item is-secondary">
+                            <a href="{{ route('index.page.tentang') }}" class="has-text-white " style="padding:0 15px">
                                 Tentang Kami
                             </a>
-                            <a href="{{ route('index.karya') }}" class="navbar-item is-secondary">
+                            <a href="{{ route('index.karya') }}" class="has-text-white " style="padding:0 15px">
                                 Karya Anggota
                             </a>
-                            <a href="#" class="navbar-item is-secondary">
+                            <a href="#" class=" has-text-white" style="padding:0 15px">
                                 Blog
                             </a>
-                            {{-- <a href="{{ route('index.pengurus') }}" class="navbar-item is-secondary">
+                            {{-- <a href="{{ route('index.pengurus') }}" class="" style="padding:0 15px">
                                 Pengurus
                             </a> --}}
-                            <a class="navbar-item">
+                            <a class="" style="padding:0 15px">
                                 <span class="button signup-button rounded secondary-btn raised">
                                     Daftar Sekarang
                                 </span>

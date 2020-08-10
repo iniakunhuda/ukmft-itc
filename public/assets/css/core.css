@@ -171,7 +171,15 @@
     min-height: 3.8rem;
     -webkit-transition: all .3s;
     transition: all .3s;
-    z-index: 29
+    z-index: 29;
+    background: rgb(16 158 158) !important;
+}
+
+.bg-itc-dark-primary {
+    background: rgb(16 158 158) !important;
+}
+.bg-itc-primary {
+    background: rgb(26 187 187) !important;
 }
 
 /* line 12, src/assets/scss/layout/_navbar.scss */
@@ -210,7 +218,8 @@
 /* line 37, src/assets/scss/layout/_navbar.scss */
 
 .navbar.is-fresh .navbar-brand:hover .navbar-item {
-    background: transparent !important
+    /* background: transparent !important */
+    background: rgb(16 158 158) !important;
 }
 
 /* line 43, src/assets/scss/layout/_navbar.scss */
@@ -230,7 +239,7 @@
 /* line 52, src/assets/scss/layout/_navbar.scss */
 
 .navbar.is-fresh .navbar-item.is-secondary:hover {
-    color: #F39200 !important
+    color: #FFF !important
 }
 
 /* line 57, src/assets/scss/layout/_navbar.scss */
@@ -298,7 +307,8 @@
     left: 0;
     width: 100%;
     min-height: 4rem !important;
-    background: #fff;
+    /* background: #fff; */
+    background: rgb(16 158 158) !important;
     -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12)
 }
@@ -322,7 +332,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
+    background: rgb(16 158 158) !important;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     z-index: 100;

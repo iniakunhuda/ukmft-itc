@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @push('hero')
-<div class="hero-body">
+<div class="hero-body bg-itc-primary">
     <div class="container">
         <div class="columns is-vcentered">
             <div class="column is-5 is-offset-1 landing-caption">
-                <h1 class="title is-1 is-bold is-spaced">
+                <h1 class="title is-1 is-bold is-spaced has-text-white">
                     UKMFT-ITC
                 </h1>
-                <h2 class="subtitle is-5 is-muted">
-                    UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) Universitas Trunojoyo Madura. Berawal dari kelompok yang diberi nama "Kelompok Penguna Komputer" dan akhirnya mendeklarasikan dirinya dengan nama "Information Technology Center" pada tanggal 05 Oktober 2002
+                <h2 class="subtitle is-5 is-muted has-text-white">
+                    UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT)
                 </h2>
                 <div class="button-wrap">
-                    <a href="http://ukmft-itc.trunojoyo.ac.id/2007/12/tentang-itc.html" class="button cta is-rounded primary-btn raised">
+                    <a href="http://ukmft-itc.trunojoyo.ac.id/2007/12/tentang-itc.html" class="button cta is-rounded secondary-btn raised">
                         Tentang Kami
                     </a>
                     <a href="http://ukmft-itc.trunojoyo.ac.id/2010/08/contact.html" class="button cta is-rounded">
@@ -46,6 +46,34 @@
 @endpush
 
 @section('body')
+<section class="section section-feature-grey is-medium">
+    <div class="container">
+        <div class="title-wrapper has-text-centered">
+            <h2 class="title is-2">Profil UKMFT-ITC</h2>
+            <h3 class="subtitle is-5 is-muted">Apa sih itu UKMFT-ITC?</h3>
+            <div class="divider is-centered"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="container" style="padding: 0 3rem;">
+                <div class="columns">
+                    <div class="column is-6">
+                        <p class="subtitle is-5 is-muted">
+                            UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) Universitas Trunojoyo Madura. Berawal dari kelompok yang diberi nama "Kelompok Penguna Komputer" dan akhirnya mendeklarasikan dirinya dengan nama "Information Technology Center" pada tanggal 05 Oktober 2002
+                        </p>
+                        <p class="subtitle is-5 is-muted">
+                            UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) Universitas Trunojoyo Madura. Berawal dari kelompok yang diberi nama "Kelompok Penguna Komputer" dan akhirnya mendeklarasikan dirinya dengan nama "Information Technology Center" pada tanggal 05 Oktober 2002
+                        </p>
+                    </div>
+                    <div class="column">
+                        <iframe style="width:100%;height:315px" src="https://www.youtube.com/embed/Ho4A8-wne2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section section-feature-grey is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
@@ -102,7 +130,7 @@
     </div>
 </section>
 
-<section class="section is-medium">
+<section class="section is-medium section-light-grey">
     <div class="container">
         <div class="title-wrapper has-text-centered">
             <h2 class="title is-2">Budaya dalam UKMFT-ITC</h2>
@@ -540,7 +568,7 @@
         </div>
         <br><br>
     </div>
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ae96a6c4346759879b3595f75133ce1c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    {{-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ae96a6c4346759879b3595f75133ce1c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> --}}
 </section>
 
 <section class="section section-light-grey is-medium">
@@ -554,7 +582,7 @@
         <div class="content-wrapper">
             <div class="columns">
                 <div class="column has-text-centered">
-                    <button class="button cta is-large primary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</button>
+                    <button class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</button>
                 </div>
             </div>
         </div>
