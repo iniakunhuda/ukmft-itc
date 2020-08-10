@@ -568,7 +568,7 @@
         </div>
         <br><br>
     </div>
-    {{-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ae96a6c4346759879b3595f75133ce1c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> --}}
+    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a3d8ebc75b2057ddb6f49c16c1f831df.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 </section>
 
 <section class="section section-light-grey is-medium">
