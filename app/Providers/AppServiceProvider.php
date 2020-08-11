@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Setting;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 
@@ -30,7 +31,9 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('isChecked', function ($expression) {
             list($data, $value) = explode(', ', $expression);
             $parsed = "<?php 
-            if(isset($data)){
+            if(is_null($data)) {
+                 echo '';
+            } else if(isset($data)){
                 echo e(($data == $value) ? 'checked' : '');
             } else {
                 echo '';
@@ -42,7 +45,9 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('isSelected', function ($expression) {
             list($data, $value) = explode(', ', $expression);
             $parsed = "<?php 
-            if(isset($data)){
+            if(is_null($data)) {
+                 echo '';
+            } else if(isset($data)){
                 echo e(($data == $value) ? 'selected' : '');
             } else {
                 echo '';
@@ -53,5 +58,13 @@ class AppServiceProvider extends ServiceProvider
 
         // rupiah
         Blade::directive('rupiah', function ( $expression ) { return "Rp. <?php echo number_format($expression,0,',','.'); ?>"; });
+        
+        // pengaturan global
+        $settings = [];
+        $data = Setting::all();
+        foreach((array) $data->toArray() as $r) {
+            $settings[$r['key']] = $r['value'];
+        }
+        view()->share('SETTING', $settings);
     }
 }

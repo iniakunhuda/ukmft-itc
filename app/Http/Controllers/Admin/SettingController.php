@@ -15,7 +15,7 @@ class SettingController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.setting.index');
     }
 
     /**
@@ -36,7 +36,20 @@ class SettingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->toArray();
+        Setting::truncate();
+
+        foreach((array) $data as $key => $val) {
+            if($key == '_token') continue;
+            $r = [
+                'key' => $key,
+                'value' => $val
+            ];
+            Setting::create($r);
+        }
+
+        alert()->success('Berhasil memperbarui pengaturan', 'Sukses');
+        return redirect(route('setting.index'));
     }
 
     /**

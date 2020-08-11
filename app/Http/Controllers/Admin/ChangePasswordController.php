@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\User;
 
-class ChangePassword extends Controller
+class ChangePasswordController extends Controller
 {
     /**
      * Display a listing of the resource.

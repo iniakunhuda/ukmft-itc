@@ -329,8 +329,8 @@
 <section class="section is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Karya Anggota</h2>
-            <h3 class="subtitle is-5 is-muted">Hasil karya anggota UKMFT-ITC</h3>
+            <h2 class="title is-2">Karya</h2>
+            <h3 class="subtitle is-5 is-muted">Beragam karya mahasiswa Fakultas Teknik</h3>
             <div class="divider is-centered"></div>
         </div>
 

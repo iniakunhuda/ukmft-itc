@@ -59,7 +59,7 @@
                                 Tentang Kami
                             </a>
                             <a href="{{ route('index.karya') }}" class="has-text-white " style="padding:0 15px">
-                                Karya Anggota
+                                Karya Mahasiswa
                             </a>
                             <a href="#" class=" has-text-white" style="padding:0 15px">
                                 Blog
@@ -100,7 +100,7 @@
                                 Tentang Kami
                             </a>
                             <a href="{{ route('index.karya') }}" class="has-text-white " style="padding:0 15px">
-                                Karya Anggota
+                                Karya Mahasiswa
                             </a>
                             <a href="#" class=" has-text-white" style="padding:0 15px">
                                 Blog

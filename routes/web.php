@@ -39,8 +39,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::resource('kategori_prestasi', 'PrestasiKategoriController');
     Route::resource('prestasi', 'PrestasiController');
     // Change Password
-    Route::get('setting/change_password', 'ChangePassword@index')->name('admin.change');
-    Route::put('setting/{user}/change_password', 'ChangePassword@store')->name('admin.update');
-    // Kategori Prestasi
+    Route::get('setting/change_password', 'ChangePasswordController@index')->name('admin.change');
+    Route::put('setting/{user}/change_password', 'ChangePasswordController@store')->name('admin.update');
+
+    Route::resource('setting', 'SettingController');
 
 });
