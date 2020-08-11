@@ -25,11 +25,8 @@ Auth::routes();
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
-<<<<<<< HEAD
-=======
 
     // Karya
->>>>>>> c5db60a6c70b4120769835a4ee2c05715fc5928e
     Route::resource('karya', 'KaryaController');
     Route::get('karya/{karya}/photo/index', 'KaryaController@photo_index')->name('karya.photo.index');
     Route::post('karya/{karya}/photo/create', 'KaryaController@photo_create')->name('karya.photo.create');
