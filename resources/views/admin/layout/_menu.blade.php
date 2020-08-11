@@ -28,13 +28,18 @@
     </a>
 </li>
 <li class="">
-    <a href="#">
+    <a href="{{ route('pages.index') }} ">
         <i class="fa fa-folder"></i>
         <span>Halaman</span>
     </a>
 </li>
 <li class="">
-    <a href="#">
+    <a href="{{ route('kategori_prestasi.index') }} ">
+        <i class="fa fa-folder"></i>
+        <span>Prestasi Kategori</span>
+    </a>
+<li class="">
+    <a href="{{ route('prestasi.index') }} ">
         <i class="fa fa-folder"></i>
         <span>Prestasi</span>
     </a>
@@ -47,7 +52,7 @@
         </span>
     </a>
     <ul class="treeview-menu">
-        <li><a href="invoice.html"><i class="fa fa-circle-o"></i> Akun</a></li>
+        <li><a href="{{ route('admin.change') }} "><i class="fa fa-circle-o"></i> Akun</a></li>
         <li><a href="profile.html"><i class="fa fa-circle-o"></i> Website</a></li>
     </ul>
 </li>

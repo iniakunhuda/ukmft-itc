@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\AppHelper;
 use App\Page;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PageRequest;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    protected $tmp = "admin.pages.";
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +18,8 @@ class PageController extends Controller
      */
     public function index()
     {
-        //
+        $data['page'] = Page::all();
+        return view($this->tmp.'index',$data);
     }
 
     /**
@@ -25,7 +29,8 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        $data['halaman'] = Page::all();
+        return view($this->tmp.'create',$data);
     }
 
     /**
@@ -34,9 +39,21 @@ class PageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PageRequest $request)
     {
-        //
+        $filename = AppHelper::upload($request,'banner','page');
+        $data = $request->toArray();
+        $data['slug'] = \Str::slug($data['judul']);
+        $data['banner'] = $filename;
+
+        $page = Page::create($data);
+        if ($page) {
+            alert()->success('Berhasil menambah data', 'Sukses');
+            return redirect(route('pages.index'));
+        }else{
+            alert()->error('Gagal menambah data', 'Error');
+            return redirect()->back()->withInput();
+        }
     }
 
     /**
@@ -58,7 +75,9 @@ class PageController extends Controller
      */
     public function edit(Page $page)
     {
-        //
+        $data['page'] = $page;
+        $data['halaman'] = Page::all();
+        return view($this->tmp.'create', $data);
     }
 
     /**
@@ -70,7 +89,19 @@ class PageController extends Controller
      */
     public function update(Request $request, Page $page)
     {
-        //
+        $filename = AppHelper::upload_update($request,'banner','page',$page['banner']);
+        $data = $request->toArray();
+        $data['slug'] = \Str::slug($data['judul']);
+        $data['banner'] = $filename;
+
+        $saved = $page->update($data);
+        if ($saved) {
+            alert()->success('Berhasil memperbarui data', 'Sukses');
+            return redirect(route('pages.edit', $page->id));
+        }else{
+            alert()->error('Gagal memperbarui data', 'Error');
+            return redirect()->back()->withInput();
+        }
     }
 
     /**
@@ -81,6 +112,8 @@ class PageController extends Controller
      */
     public function destroy(Page $page)
     {
-        //
+        \Storage::disk('public')->delete($page->banner);
+        $page->delete();
+        return \response()->json(['status' => 200, 'msg' => 'Berhasil']);
     }
 }

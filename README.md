@@ -1,11 +1,11 @@
 ## Todo feature
 - Tentang Website
-- Pengurus (TBC)
-- Karya
-- Page
+- Pengurus @Virgorasion
+- Karya & Kategori
+- Page @muflihunaf (Done)
     - Pendaftaran Baru (Gform)
 - Event Terbaru Instagram
-- Prestasi
+- Prestasi @muflihunaf (Done)
 
 ## How to install
 - composer install

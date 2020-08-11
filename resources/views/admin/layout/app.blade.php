@@ -190,6 +190,8 @@
 <!-- DataTables -->
 <script src="{{url('admin_assets')}}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="{{url('admin_assets')}}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+{{-- Ck Editor --}}
+<script src="{{ url('assets') }}/ckeditor/ckeditor.js "></script>
 <script>
   $(document).ready(function(){
     $('[data-table="datatable"]').DataTable();
