@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Page;
 use App\Karya;
 use App\KaryaKategori;
 use Illuminate\Http\Request;
@@ -40,5 +41,14 @@ class IndexController extends Controller
 
         $data['karya'] = $karya;
         return view('karya.detail', $data);
+    }
+
+    public function pageDetail($id)
+    {
+        $page = Page::find($id);
+        if(!$page) abort(404);
+
+        $data['page'] = $page;
+        return view('page.detail', $data);
     }
 }

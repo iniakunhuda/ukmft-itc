@@ -72,6 +72,11 @@
                             <a href="{{ route('index.page.tentang') }}" class="has-text-white ">
                                 Tentang Kami
                             </a>
+                            @foreach ($SETTING_MENUS as $item)
+                            <a href="{{ route('index.page.detail', $item->id) }}" class="has-text-white ">
+                                {{ $item->judul }}
+                            </a>  
+                            @endforeach
                             <a href="{{ route('index.karya') }}" class="has-text-white ">
                                 Karya Mahasiswa
                             </a>

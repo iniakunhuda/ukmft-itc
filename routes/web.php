@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index')->name('index');
+Route::get('/page/detail/{id?}', 'IndexController@pageDetail')->name('index.page.detail');
 Route::get('/page/tentang', 'IndexController@tentangKami')->name('index.page.tentang');
 Route::get('/karya', 'IndexController@listKarya')->name('index.karya');
 Route::get('/karya/detail/{id?}/{slug?}', 'IndexController@detailKarya')->name('index.karya.detail');

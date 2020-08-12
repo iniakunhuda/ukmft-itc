@@ -24,7 +24,7 @@
                     <input type="text" class="form-control" name="judul" placeholder="Judul Halaman"
                         value="{{ $page->judul ?? '' }}">
                 </div>
-                <div class="form-group">
+                <div class="form-group hidden">
                     <label>Halaman Parent</label>
                     <select name="page_id" class="form-control">
                         <option value="">Pilih Parent</option>
