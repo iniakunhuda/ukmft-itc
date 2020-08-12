@@ -14,16 +14,16 @@ function initPreloader() {
 }
 
 function initNavbar() {
-  $(window).scroll(function () {
-    // this will work when your window scrolled.
-    var height = $(window).scrollTop(); //getting the scrolling height of window
+  // $(window).scroll(function () {
+  //   // this will work when your window scrolled.
+  //   var height = $(window).scrollTop(); //getting the scrolling height of window
 
-    if (height > 50) {
-      $("#navbar-clone").addClass('is-active');
-    } else {
-      $("#navbar-clone").removeClass('is-active');
-    }
-  });
+  //   if (height > 50) {
+  //     $("#navbar-clone").addClass('is-active');
+  //   } else {
+  //     $("#navbar-clone").removeClass('is-active');
+  //   }
+  // });
 }
 
 function initMobileMenu() {

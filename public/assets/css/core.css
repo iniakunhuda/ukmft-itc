@@ -2410,4 +2410,17 @@ body {
     opacity: .75
 }
 
+.navbar.is-fresh .navbar-end a {
+    display: block;
+    padding: 0px 15px;
+}
+@media (max-width: 576px) {  
+    .navbar.is-fresh .navbar-end a {
+        padding: 10px 15px;
+    }
+    .button.signup-button {
+        width: 100%;
+    }
+}
+
 /*# sourceMappingURL=../../../scss */

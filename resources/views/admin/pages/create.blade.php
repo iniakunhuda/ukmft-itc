@@ -25,9 +25,9 @@
                         value="{{ $page->judul ?? '' }}">
                 </div>
                 <div class="form-group">
-                    <label>Halaman id</label>
+                    <label>Halaman Parent</label>
                     <select name="page_id" class="form-control">
-                        <option value="">Pilih Kategori</option>
+                        <option value="">Pilih Parent</option>
                         @foreach ($halaman as $item)
                         @isset($page)
                             @if ($item->id != $page->id)

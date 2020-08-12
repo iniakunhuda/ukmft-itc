@@ -19,7 +19,7 @@ class CreatePrestasisTable extends Migration
             $table->string('juara');
             $table->integer('tahun');
             $table->string('tingkat');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->text('foto')->nullable();
             $table->timestamps();
         });

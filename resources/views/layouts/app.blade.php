@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <title>@yield('title', 'UKMFT-ITC')</title>
+        <title>@yield('title', $SETTING['SITE_TITLE'] . ' - ' . $SETTING['SITE_SLOGAN'])</title>
         <link rel="icon" type="image/png" href="{{ url('/') }}/assets/img/favicon.ico" />
 
         <!--Core CSS -->
@@ -47,36 +47,9 @@
                             <span aria-hidden="true"></span>
                         </a>
                     </div>
-            
-                    <div id="navbar-menu" class="navbar-menu is-static">
-            
-                        <div class="navbar-start">
-                            
-                        </div>
-            
-                        <div class="navbar-end ">
-                            <a href="{{ route('index.page.tentang') }}" class="has-text-white " style="padding:0 15px">
-                                Tentang Kami
-                            </a>
-                            <a href="{{ route('index.karya') }}" class="has-text-white " style="padding:0 15px">
-                                Karya Mahasiswa
-                            </a>
-                            <a href="#" class=" has-text-white" style="padding:0 15px">
-                                Blog
-                            </a>
-                            {{-- <a href="{{ route('index.pengurus') }}" class="" style="padding:0 15px">
-                                Pengurus
-                            </a> --}}
-                            <a class="" style="padding:0 15px">
-                                <span class="button signup-button rounded secondary-btn raised">
-                                    Daftar Sekarang
-                                </span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </nav>
-            <nav id="navbar-clone" class="navbar is-fresh bg-itc-dark-primary" role="navigation" aria-label="main navigation">
+            <nav id="navbar-clone" class="navbar is-fresh bg-itc-dark-primary is-active" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="{{ url('/') }}">
@@ -90,29 +63,31 @@
                         </a>
                     </div>
             
-                    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+                    <div id="cloned-navbar-menu" class="navbar-menu is-fixed" style="background:none">
             
                         <div class="navbar-start">
                         </div>
             
                         <div class="navbar-end">
-                            <a href="{{ route('index.page.tentang') }}" class="has-text-white " style="padding:0 15px">
+                            <a href="{{ route('index.page.tentang') }}" class="has-text-white ">
                                 Tentang Kami
                             </a>
-                            <a href="{{ route('index.karya') }}" class="has-text-white " style="padding:0 15px">
+                            <a href="{{ route('index.karya') }}" class="has-text-white ">
                                 Karya Mahasiswa
                             </a>
-                            <a href="#" class=" has-text-white" style="padding:0 15px">
+                            <a href="http://ukmft-itc.trunojoyo.ac.id/" class=" has-text-white">
                                 Blog
                             </a>
-                            {{-- <a href="{{ route('index.pengurus') }}" class="" style="padding:0 15px">
+                            {{-- <a href="{{ route('index.pengurus') }}" class="">
                                 Pengurus
                             </a> --}}
-                            <a class="" style="padding:0 15px">
+                            @if ($SETTING['IS_OPEN_REC'] != 'n')
+                            <a href="{{ $SETTING['URL_OPEN_REC'] }}">
                                 <span class="button signup-button rounded secondary-btn raised">
                                     Daftar Sekarang
                                 </span>
                             </a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -121,6 +96,26 @@
         </section>
         
         @yield('body')
+
+        @if ($SETTING['IS_OPEN_REC'] != 'n')
+        <section class="section section-light-grey is-medium">
+            <div class="container">
+                <div class="title-wrapper has-text-centered">
+                    <h2 class="title is-2 is-spaced">Tertarik untuk bergabung bersama UKMFT-ITC?</h2>
+                <h3 class="subtitle is-5 is-muted">Kami membuka pendaftaran anggota baru tahun {{ Date('Y') }}/{{ Date('Y')+1 }}</h3>
+                    <div class="divider is-centered"></div>
+                </div>
+        
+                <div class="content-wrapper">
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <a href="{{ $SETTING['URL_OPEN_REC'] }}" class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @endif
 
         <div id="auth-modal" class="modal">
             <div class="modal-background"></div>

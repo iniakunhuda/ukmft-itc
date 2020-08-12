@@ -48,7 +48,7 @@
                     @php
                      $openrec = (isset($SETTING['IS_OPEN_REC'])) ? $SETTING['IS_OPEN_REC'] : null;
                     @endphp
-                    <select class="form-control">
+                    <select name="IS_OPEN_REC" class="form-control">
                         <option value="n" @isSelected($openrec, "n")>Tidak</option>
                         <option value="y" @isSelected($openrec, "y")>Iya</option>
                     </select>

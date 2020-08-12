@@ -21,6 +21,10 @@ class Karya extends Model
         return $this->belongsTo(KaryaKategori::class, 'kategori_id', 'id');
     }
 
+    public function photos() {
+        return $this->hasMany(KaryaFoto::class, 'karya_id', 'id');
+    }
+
     public function getGambarUrlAttribute() {
         return asset('storage/'.$this->gambar);
     }

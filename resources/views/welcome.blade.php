@@ -9,16 +9,14 @@
                     UKMFT-ITC
                 </h1>
                 <h2 class="subtitle is-5 is-muted has-text-white">
-                    UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT)
+                    UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) yang fokus mengembangkan teknologi
                 </h2>
-                <div class="button-wrap">
-                    <a href="http://ukmft-itc.trunojoyo.ac.id/2007/12/tentang-itc.html" class="button cta is-rounded secondary-btn raised">
+                <br>
+                {{-- <div class="button-wrap">
+                    <a href="{{ route('index.page.tentang') }}" class="button cta is-rounded secondary-btn raised">
                         Tentang Kami
                     </a>
-                    <a href="http://ukmft-itc.trunojoyo.ac.id/2010/08/contact.html" class="button cta is-rounded">
-                        Kontak
-                    </a>
-                </div>
+                </div> --}}
             </div>
             <div class="column is-5">
                 <figure class="image is-4by3">
@@ -59,14 +57,11 @@
                 <div class="columns">
                     <div class="column is-6">
                         <p class="subtitle is-5 is-muted">
-                            UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) Universitas Trunojoyo Madura. Berawal dari kelompok yang diberi nama "Kelompok Penguna Komputer" dan akhirnya mendeklarasikan dirinya dengan nama "Information Technology Center" pada tanggal 05 Oktober 2002
-                        </p>
-                        <p class="subtitle is-5 is-muted">
-                            UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) Universitas Trunojoyo Madura. Berawal dari kelompok yang diberi nama "Kelompok Penguna Komputer" dan akhirnya mendeklarasikan dirinya dengan nama "Information Technology Center" pada tanggal 05 Oktober 2002
+                            {{ $SETTING['PROFIL_SINGKAT'] }}
                         </p>
                     </div>
                     <div class="column">
-                        <iframe style="width:100%;height:315px" src="https://www.youtube.com/embed/Ho4A8-wne2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe style="width:100%;height:315px" src="{{ $SETTING['EMBED_YT'] }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -286,9 +281,9 @@
             <h3 class="subtitle is-5 light-text">Apa yang dikatakan orang-orang mengenai ITC</h3>
         </div>
 
-        <div class="content-wrapper">
+        <div class="content-wrapper is-hidden-mobile">
             <div class="columns is-vcentered">
-                <div class="column is-4">
+                <div class="column is-3">
                     <figure class="testimonial">
                         <blockquote>
                             Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
@@ -299,7 +294,7 @@
                         </div>
                     </figure>
                 </div>
-                <div class="column is-4">
+                <div class="column is-3">
                     <figure class="testimonial">
                         <blockquote>
                             Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
@@ -310,7 +305,7 @@
                         </div>
                     </figure>
                 </div>
-                <div class="column is-4">
+                <div class="column is-3">
                     <figure class="testimonial">
                         <blockquote>
                             Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
@@ -318,6 +313,66 @@
                         <div class="author">
                             <img src="{{ url('/') }}/assets/img/illustrations/faces/3.png" alt=""/>
                             <h5>Gary Blackman</h5><span>Alumni, CTO Bukalapak</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="column is-3">
+                    <figure class="testimonial">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                        </blockquote>
+                        <div class="author">
+                            <img src="{{ url('/') }}/assets/img/illustrations/faces/3.png" alt=""/>
+                            <h5>Gary Blackman</h5><span>, Mahasiswa Baru</span>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-wrapper is-flex-mobile is-hidden-desktop is-hidden-tablet is-hidden-widescreen">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure class="testimonial">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                        </blockquote>
+                        <div class="author">
+                            <img src="{{ url('/') }}/assets/img/foto/rahmat_hidayat.jpg" alt=""/>
+                            <h5>Dr. H. Rachmad Hidayat, M.T.</h5><span>Dekan Fakultas Teknik</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="testimonial">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                        </blockquote>
+                        <div class="author">
+                            <img src="{{ url('/') }}/assets/img/foto/ach_khozaimi.jpg" alt="Achmad Khozaimi, S.Kom., M.Kom"/>
+                            <h5>Achmad Khozaimi, S.Kom., M.Kom </h5><span>Pembina ITC</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="testimonial">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                        </blockquote>
+                        <div class="author">
+                            <img src="{{ url('/') }}/assets/img/illustrations/faces/3.png" alt=""/>
+                            <h5>Gary Blackman</h5><span>Alumni, CTO Bukalapak</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure class="testimonial">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                        </blockquote>
+                        <div class="author">
+                            <img src="{{ url('/') }}/assets/img/illustrations/faces/3.png" alt=""/>
+                            <h5>Gary Blackman</h5><span>, Mahasiswa Baru</span>
                         </div>
                     </figure>
                 </div>
@@ -343,45 +398,38 @@
                     Semua
                   </button>
                 </p>
+                @foreach ($karya_kategories as $item)
                 <p class="control">
-                  <button class="button" data-button-mansory=".website">
-                    Website
-                  </button>
-                </p>
-                <p class="control">
-                  <button class="button" data-button-mansory=".game">
-                    Game
-                  </button>
-                </p>
-                <p class="control">
-                  <button class="button" data-button-mansory=".aplikasi">
-                    Aplikasi
-                  </button>
-                </p>
+                    <button class="button" data-button-mansory=".karya-{{ $item->id }}">
+                      {{ $item->kategori }}
+                    </button>
+                </p>    
+                @endforeach
             </div>
         </div>
 
         <br><br>
 
         <div class="grid">
-            <div class="grid-item website">
+            @foreach ($karyas as $item)
+            <div class="grid-item karya-{{ $item->kategori->id }}">
                 <div class="card">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                        <img src="https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673_1280.jpg" alt="" srcset="">
+                      <img src="{{ $item->gambar_url }}" alt="" srcset="">
                       </figure>
                     </div>
                     <div class="card-content">
                       <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
+                      <strong><a class="text-black" href="{{ route('index.karya.detail', ['id' => $item->id, 'slug' => $item->slug]) }}">{{ $item->judul }}</a></strong>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
+                            {{ $item->desc_singkat }}
                         </p>
                         <br>
                         <div id="meta" class="field is-grouped is-grouped-multiline">
                             <div class="control">
                               <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Website</a>
+                              <a class="tag is-success" href="javascript:;">{{ $item->kategori->kategori }}</a>
                               </div>
                             </div>
                             
@@ -390,162 +438,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item game">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://cdn.pixabay.com/photo/2016/11/21/15/08/computer-1845880_1280.jpg" alt="" srcset="">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
-                        </p>
-                        <br>
-                        <div id="meta" class="field is-grouped is-grouped-multiline">
-                            <div class="control">
-                              <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Game</a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item website">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854__480.png" alt="" srcset="">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
-                        </p>
-                        <br>
-                        <div id="meta" class="field is-grouped is-grouped-multiline">
-                            <div class="control">
-                              <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Website</a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item website">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://cdn.pixabay.com/photo/2016/08/27/12/06/website-1624028_1280.png" alt="" srcset="">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
-                        </p>
-                        <br>
-                        <div id="meta" class="field is-grouped is-grouped-multiline">
-                            <div class="control">
-                              <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Website</a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item game">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://www.kaorinusantara.or.id/wp-content/uploads/2016/11/battle-of-surabaya-1.jpg" alt="" srcset="">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
-                        </p>
-                        <br>
-                        <div id="meta" class="field is-grouped is-grouped-multiline">
-                            <div class="control">
-                              <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Game</a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item game">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://cdn.playtoko.com/img/files/2014/10/14/playtokocom_-bos-1.png" alt="" srcset="">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
-                        </p>
-                        <br>
-                        <div id="meta" class="field is-grouped is-grouped-multiline">
-                            <div class="control">
-                              <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Game</a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item aplikasi">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://img.okezone.com/content/2016/08/30/207/1476687/lima-aplikasi-chat-karya-anak-bangsa-8shDSUzj2H.jpg" alt="" srcset="">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="content">
-                        <strong><a class="text-black" href="{{ route('index.karya.detail') }}">Aplikasi Manajemen Kampus</a></strong>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, doloribus?
-                        </p>
-                        <br>
-                        <div id="meta" class="field is-grouped is-grouped-multiline">
-                            <div class="control">
-                              <div class="tags has-addons">
-                                  <a class="tag is-success" href="#colors">Aplikasi</a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
 
         <br><br>
@@ -570,37 +463,23 @@
     </div>
     <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a3d8ebc75b2057ddb6f49c16c1f831df.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 </section>
-
-<section class="section section-light-grey is-medium">
-    <div class="container">
-        <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2 is-spaced">Tertarik untuk bergabung bersama UKMFT-ITC?</h2>
-            <h3 class="subtitle is-5 is-muted">Kami membuka pendaftaran anggota baru tahun 2020/2021</h3>
-            <div class="divider is-centered"></div>
-        </div>
-
-        <div class="content-wrapper">
-            <div class="columns">
-                <div class="column has-text-centered">
-                    <button class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 @endsection
 
 @push('css')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
 <style>
     .grid-item { width: 25%;padding:10px; }
     @media(max-width:767px){
         .grid-item { width: 50%;padding:10px; }
     }
+    .owl-carousel .owl-item img { width: auto !important; }
 </style>
 @endpush
 
 @push('js')
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
         let $grid = $('.grid').isotope({
@@ -616,7 +495,13 @@
             $('button[data-button-mansory]').each(function(){
                 if($(this).data('buttonMansory') != target_class) $(this).removeClass('is-link');
             });
-        })
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            items: 1
+        });
     })
 </script>
 @endpush

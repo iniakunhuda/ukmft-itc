@@ -34,7 +34,11 @@
                         <td>{{ $key+1 }}</td>
                         <td>{{ $row->judul }}
                         <td>
+                            @if ($row->banner != "")
                             <img src="{{ $row->banner_url }}" class="img-responsive" style="width:100px;height:100px;object-fit:cover"  alt="Gambar">
+                            @else
+                                -
+                            @endif
                         </td>
 
                         <td>{{ $row->tag }} </td>

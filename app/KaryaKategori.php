@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Str;
 
 class KaryaKategori extends Model
 {
@@ -16,5 +17,10 @@ class KaryaKategori extends Model
         static::addGlobalScope('order', function (Builder $builder) {
             $builder->orderBy('kategori', 'asc');
         });
+    }
+
+    public function getNamaKelasAttribute()
+    {
+        return Str::slug($this->kategori, '_');
     }
 }

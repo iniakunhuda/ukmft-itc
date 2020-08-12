@@ -10,6 +10,12 @@
     </a>
 </li> --}}
 <li class="">
+    <a href="{{ route('pages.index') }} ">
+        <i class="fa fa-folder"></i>
+        <span>Halaman</span>
+    </a>
+</li>
+<li class="">
     <a href="{{ route('kategori_karya.index') }}">
         <i class="fa fa-folder"></i>
         <span>Kategori Karya</span>
@@ -19,18 +25,6 @@
     <a href="{{ route('karya.index') }}">
         <i class="fa fa-folder"></i>
         <span>Karya</span>
-    </a>
-</li>
-<li class="">
-    <a href="#">
-        <i class="fa fa-folder"></i>
-        <span>Pengurus</span>
-    </a>
-</li>
-<li class="">
-    <a href="{{ route('pages.index') }} ">
-        <i class="fa fa-folder"></i>
-        <span>Halaman</span>
     </a>
 </li>
 <li class="">

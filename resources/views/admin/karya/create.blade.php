@@ -60,18 +60,18 @@
                     <input type="text" class="form-control" name="lomba" placeholder="Game Competition Indonesia (Tidak wajib diisi)" value="{{ $karya->lomba ?? '' }}">
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <div class="form-group">
                             <label>Nama Mahasiswa</label>
                             <input type="text" class="form-control" name="mhs_nama" placeholder="Fulan (Tidak wajib diisi)" value="{{ $karya->mhs_nama ?? '' }}">
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    {{-- <div class="col-sm-6">
                         <div class="form-group">
                             <label>Angkatan Mahasiswa</label>
                             <input type="text" class="form-control" name="mhs_angkatan" placeholder="2019 (Tidak wajib diisi)" value="{{ $karya->mhs_angkatan ?? '' }}">
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="form-group">
                     <label>Gambar (1:1)</label>

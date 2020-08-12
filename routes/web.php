@@ -13,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index')->name('index');
 Route::get('/page/tentang', 'IndexController@tentangKami')->name('index.page.tentang');
 Route::get('/karya', 'IndexController@listKarya')->name('index.karya');
-Route::get('/karya/detail', 'IndexController@detailKarya')->name('index.karya.detail');
+Route::get('/karya/detail/{id?}/{slug?}', 'IndexController@detailKarya')->name('index.karya.detail');
 Route::get('/pengurus', 'IndexController@listPengurus')->name('index.pengurus');
 
 Auth::routes();
