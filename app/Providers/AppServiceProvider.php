@@ -61,14 +61,14 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('rupiah', function ( $expression ) { return "Rp. <?php echo number_format($expression,0,',','.'); ?>"; });
         
         // pengaturan global
-        // $settings = [];
-        // $data = Setting::all();
-        // foreach((array) $data->toArray() as $r) {
-        //     $settings[$r['key']] = $r['value'];
-        // }
-        // view()->share('SETTING', $settings);
+        $settings = [];
+        $data = Setting::all();
+        foreach((array) $data->toArray() as $r) {
+            $settings[$r['key']] = $r['value'];
+        }
+        view()->share('SETTING', $settings);
 
-        // // menu home
-        // view()->share('SETTING_MENUS', Page::where('page_id', NULL)->get());
+        // menu home
+        view()->share('SETTING_MENUS', Page::where('page_id', NULL)->get());
     }
 }
