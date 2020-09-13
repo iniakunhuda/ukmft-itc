@@ -53,7 +53,7 @@
                 </div>
                 <div class="form-group">
                     <label>Deskripsi</label>
-                    <textarea name="desc" placeholder="Aplikasi ini dibuat oleh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias!" class="form-control" cols="30" rows="5">{{ $karya->desc ?? '' }}</textarea>
+                    <textarea name="desc" id="ckeditor" placeholder="Aplikasi ini dibuat oleh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias!" class="form-control" cols="30" rows="5">{{ $karya->desc ?? '' }}</textarea>
                 </div>
                 <div class="form-group">
                     <label>Juara</label>
@@ -97,3 +97,9 @@
         </form>
     </div>
 @endsection
+
+@push('js')
+<script>
+    CKEDITOR.replace('ckeditor');
+</script>
+@endpush
