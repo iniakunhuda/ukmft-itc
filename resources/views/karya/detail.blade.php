@@ -32,14 +32,16 @@
             </div>
             <div>
               <strong>Deskripsi</strong>
-              <p>{{ $karya->desc }}</p>
+              <p>{{ nl2br($karya->desc) }}</p>
               <br>
             </div>
+            @if($karya->juara)
             <div>
               <strong>Juara</strong>
               <p>{{ $karya->juara ?? '-' }}</p>
               <br>
             </div>  
+            @endif
             <div>
               <strong>Mahasiswa</strong>
               <p>{{ $karya->mhs_nama ?? '-' }}</p>
