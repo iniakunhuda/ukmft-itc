@@ -5,6 +5,7 @@
     <div class="container">
         <div class="title-wrapper has-text-centered">
             <h2 class="title is-2">{{ $karya->judul }}</h2>
+            <br>
             <h3 class="subtitle is-5 is-muted">{{ $karya->kategori->kategori }}</h3>
             <div class="divider is-centered"></div>
         </div>
@@ -32,7 +33,7 @@
             </div>
             <div>
               <strong>Deskripsi</strong>
-              <p>{{ nl2br($karya->desc) }}</p>
+              <p>{!! $karya->desc !!}</p>
               <br>
             </div>
             @if($karya->juara)
