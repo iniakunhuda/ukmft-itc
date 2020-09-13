@@ -51,7 +51,7 @@
             @if (!is_null($karya->url))
             <div>
               <br>
-              <a href="{{ $karya->url }}" class="button primary-btn">
+              <a href="{{ $karya->url }}" target="_blank" class="button primary-btn">
                 Lihat Aplikasi
               </a>
             </div> 
