@@ -6,6 +6,10 @@
     </h1>
 @endsection
 
+@php
+    $karya_kategori = (isset($karya)) ? $karya->kategori_id : null;    
+@endphp
+
 @section('body')
     @include('admin.layout._error')
 
@@ -35,7 +39,7 @@
                     <select name="kategori_id" class="form-control">
                         <option value="">Pilih Kategori</option>
                         @foreach ($kategori as $item)
-                            <option value="{{ $item->id }}" @isSelected($karya->kategori_id, $item->id)>{{ $item->kategori }}</option>                            
+                            <option value="{{ $item->id }}" @isSelected($karya_kategori, $item->id)>{{ $item->kategori }}</option>                            
                         @endforeach
                     </select>
                 </div>
@@ -74,7 +78,7 @@
                     </div> --}}
                 </div>
                 <div class="form-group">
-                    <label>Gambar (1:1)</label>
+                    <label>Gambar Banner</label>
                     @isset($karya)
                         <br>
                         <img src="{{ $karya->gambar_url }}" style="width:100px;height:100px;object-fit:cover" alt="Gambar">
