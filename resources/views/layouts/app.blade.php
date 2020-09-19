@@ -87,7 +87,7 @@
                                 Pengurus
                             </a> --}}
                             @if ($SETTING['IS_OPEN_REC'] != 'n')
-                            <a href="{{ $SETTING['URL_OPEN_REC'] }}">
+                            <a target="_blank" href="{{ $SETTING['URL_OPEN_REC'] }}">
                                 <span class="button signup-button rounded secondary-btn raised">
                                     Daftar Sekarang
                                 </span>
@@ -114,7 +114,7 @@
                 <div class="content-wrapper">
                     <div class="columns">
                         <div class="column has-text-centered">
-                            <a href="{{ $SETTING['URL_OPEN_REC'] }}" class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG, GRATIS!</a>
+                            <a target="_blank" href="{{ $SETTING['URL_OPEN_REC'] }}" class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG</a>
                         </div>
                     </div>
                 </div>
@@ -181,10 +181,10 @@
                             <div class="footer-header">
                                 <h3>Kontak Kami</h3>
                                 <ul class="link-list">
-                                    <li><a href="#">Telp</a></li>
-                                    <li><a href="#">Instagram</a></li>
-                                    <li><a href="#">Facebook</a></li>
-                                    <li><a href="#">Email</a></li>
+                                    <li><a target="_blank" href="telp:082234280840">Telp</a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/ukmft_itc/">Instagram</a></li>
+                                    <li><a target="_blank" href="https://web.facebook.com/ukmftITC">Facebook</a></li>
+                                    <li><a target="_blank" href="mailto:itc.unijoyo@gmail.com">Email</a></li>
                                 </ul>
                             </div>
                         </div>

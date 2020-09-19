@@ -103,6 +103,7 @@
                         </div>
                         <div class="card-text">
                             <p>Mulai dari web development, android, game, design, dsb</p>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -133,7 +134,7 @@
             <div class="divider is-centered"></div>
         </div>
 
-        <div class="columns is-vcentered side-feature mt-60">
+        <div class="columns is-vcentered side-feature mt-60 mb-5">
             <div class="column is-4 is-offset-2">
                 <h3 class="title is-3 mb-10 is-title-reveal">Kolaborasi & Inovasi</h2>
                 <p class="subtitle is-5 is-muted">
@@ -142,18 +143,18 @@
                 </p>
             </div>
             <div class="column is-5">
-                <img src="{{ url('/') }}/assets/img/illustrations/features/feature-1.png" alt="">
+                <img src="{{ url('/') }}/assets/img/colab2.png" alt="">
             </div>
         </div>
 
         <div class="columns is-vcentered side-feature mt-60">
             <div class="column is-5 is-offset-1">
-                <img src="{{ url('/') }}/assets/img/illustrations/features/feature-2.png" alt="">
+                <img src="{{ url('/') }}/assets/img/colab1.png" alt="">
             </div>
             <div class="column is-4 is-offset-1">
                 <h3 class="title is-3 mb-10 is-title-reveal">Tidak Berhenti Belajar</h2>
                 <p class="subtitle is-5 is-muted">Dalam menghadapi Teknologi yang semakin berkembang, UKMFT-ITC berkomitmen untuk selalu memberikan edukasi baik 
-                    itu berupa seminar, diskusi, pelatihan, workshop dengan berbagai disiplin ilmu di bidang Teknologi</p>
+                    itu berupa seminar, diskusi, pelatihan, workshop dengan berbagai ilmu di bidang Teknologi</p>
             </div>
         </div>
     </div>
@@ -443,10 +444,14 @@
 
         <br><br>
 
-        <div class="columns is-centered">
-            <a href="{{ route('index.karya') }}" class="button btn-primary rounded is-medium raised">
-                Selengkapnya
-            </a>
+        <div class="content-wrapper">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <a href="{{ route('index.karya') }}" class="button btn-primary rounded is-medium raised">
+                        Selengkapnya
+                    </a>    
+                </div>
+            </div>
         </div>
         
     </div>
