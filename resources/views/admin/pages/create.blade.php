@@ -6,16 +6,20 @@
 </h1>
 @endsection
 
+@php
+$page_id = isset($page->id) ? $page->id : null;    
+@endphp
+
 @section('body')
 @include('admin.layout._error')
 
 <div class="box">
-    @isset($page)
+        @isset($page)
     <form enctype="multipart/form-data" action="{{ route('pages.update', $page->id) }}" method="POST" role="form">
         <input name="_method" type="hidden" value="PUT">
         @else
         <form enctype="multipart/form-data" action="{{ route('pages.store') }}" method="POST" role="form">
-            @endisset
+        @endisset
 
             @csrf
             <div class="box-body">
@@ -29,20 +33,26 @@
                     <select name="page_id" class="form-control">
                         <option value="">Pilih Parent</option>
                         @foreach ($halaman as $item)
-                        @isset($page)
-                            @if ($item->id != $page->id)
-                                <option value="{{ $item->id }}" @isSelected($page->page_id, $item->id)>{{ $item->judul }}</option>
-                            @endif
-                        @endisset
-                        <option value="{{ $item->id }}" @isSelected($page->page_id, $item->id)>{{ $item->judul }}</option>
+                            @isset($page)
+                                @if ($item->id != $page->id)
+                                    <option value="{{ $item->id }}" @isSelected($page_id, $item->id)>{{ $item->judul }}</option>
+                                @endif
+                            @endisset
+                            <option value="{{ $item->id }}" @isSelected($page_id, $item->id)>{{ $item->judul }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="form-group">
                     <label>Isi Halaman</label>
-                    <textarea name="isi" id="ckeditor"
+                    @isset($page)
+                        <textarea name="isi" id="ckeditor"
+                        placeholder="Aplikasi ini dibuat oleh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias!"
+                        class="form-control" cols="30" rows="5"></textarea>
+                    @else
+                        <textarea name="isi" id="ckeditor"
                         placeholder="Aplikasi ini dibuat oleh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestias!"
                         class="form-control" cols="30" rows="5">{{ $page->isi ?? '' }}</textarea>
+                    @endif
                 </div>
                 <div class="form-group">
                     <label>Banner </label>
