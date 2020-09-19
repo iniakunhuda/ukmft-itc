@@ -114,7 +114,9 @@
                 <div class="content-wrapper">
                     <div class="columns">
                         <div class="column has-text-centered">
-                            <img src="{{ url('assets/img/oprec.png') }}" alt="Oprec 2020/2021">
+                            <figure class="image container is-inline-block">
+                                <img src="{{ url('assets/img/oprec.png') }}" alt="Oprec 2020/2021"><br><br>
+                            </figure>
                             <a target="_blank" href="{{ $SETTING['URL_OPEN_REC'] }}" class="button cta is-large secondary-btn form-button raised is-clear">GABUNG SEKARANG</a>
                         </div>
                     </div>
