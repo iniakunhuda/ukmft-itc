@@ -417,7 +417,7 @@
                 <div class="card">
                     <div class="card-image">
                       <figure class="image is-4by3">
-                      <img src="{{ $item->gambar_url }}" alt="" srcset="">
+                        <img style="object-fit: cover" src="{{ $item->gambar_url }}" alt="" srcset="">
                       </figure>
                     </div>
                     <div class="card-content">

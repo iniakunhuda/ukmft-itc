@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+        <meta name="google-site-verification" content="fPbwtevjdSwQofKoESdU3YG5a8EmJZibyF8hOL93tB4" />
         <title>@yield('title', $SETTING['SITE_TITLE'] . ' - ' . $SETTING['SITE_SLOGAN'])</title>
         <link rel="icon" type="image/png" href="{{ url('/') }}/assets/img/favicon.ico" />
 
@@ -205,6 +205,17 @@
         <!-- Fresh JS -->
         <script src="{{ url('/') }}/assets/js/functions.js"></script>
         <script src="{{ url('/') }}/assets/js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97845936-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-97845936-2');
+        </script>
+
         @stack('js')
     </body>  
 </html>

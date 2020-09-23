@@ -25,7 +25,7 @@
               @endforeach
             </ul>
           </div>
-          <div class="column">
+          <div class="column deskripsi">
             <div>
               <strong>Judul</strong>
               <p>{{ $karya->judul }}</p>
@@ -69,6 +69,14 @@
   }
   .lSSlideOuter .lSPager.lSGallery img {
     min-height: 100%;
+  }
+  .deskripsi ul,
+  .deskripsi ol {
+    padding: 20px;
+  }
+  .deskripsi ul {
+    list-style: disc;
+    padding: 20px;
   }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA==" crossorigin="anonymous" />
