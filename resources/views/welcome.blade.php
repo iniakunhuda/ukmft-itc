@@ -12,6 +12,9 @@
                     UKMFT-ITC adalah salah satu Unit Kegiatan Mahasiswa Fakultas Teknik (UKM-FT) yang fokus mengembangkan teknologi
                 </h2>
                 <br>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1DTwaquIV--Pn5GOCHsffBvHOB6CK6NPB?usp=sharing" class="button cta is-large secondary-btn form-button raised is-clear">
+                    UNDUH PERLENGKAPAN MPAB ITC 2020
+                </a>
                 {{-- <div class="button-wrap">
                     <a href="{{ route('index.page.tentang') }}" class="button cta is-rounded secondary-btn raised">
                         Tentang Kami
